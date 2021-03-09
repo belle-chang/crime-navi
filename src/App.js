@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import useSWR from 'swr';
 import lookup from 'country-code-lookup';
-import './App.scss';
+import './App.css';
 // Need mapbox css for tooltips later in the tutorial
 import 'mapbox-gl/dist/mapbox-gl.css';
 

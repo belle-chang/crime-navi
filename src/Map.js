@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import './Map.scss';
+import './Map.css';
 
 mapboxgl.accessToken =
     'pk.eyJ1IjoiYW5hYmVsbGVjaGFuZyIsImEiOiJja20xZmVxNGYwMTRpMnJtemJ0M3podzFzIn0.punpaEzFpzG4kmbcpdtwUQ'
@@ -16,8 +16,8 @@ const Map = () => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: 'mapbox://styles/mapbox/streets-v11',
-      // style: 'mapbox://styles/anabellechang/ckm11howb889h17qf87wj3ld6',
+    //   style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/anabellechang/ckm11howb889h17qf87wj3ld6',
       center: [lng, lat],
       zoom: zoom
     });
