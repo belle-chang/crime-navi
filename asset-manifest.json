@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/crime-navi/static/css/main.0749616c.chunk.css",
+    "main.js": "/crime-navi/static/js/main.ffe5e2d8.chunk.js",
+    "main.js.map": "/crime-navi/static/js/main.ffe5e2d8.chunk.js.map",
+    "runtime-main.js": "/crime-navi/static/js/runtime-main.f7260810.js",
+    "runtime-main.js.map": "/crime-navi/static/js/runtime-main.f7260810.js.map",
+    "static/js/2.942f4147.chunk.js": "/crime-navi/static/js/2.942f4147.chunk.js",
+    "static/js/2.942f4147.chunk.js.map": "/crime-navi/static/js/2.942f4147.chunk.js.map",
+    "index.html": "/crime-navi/index.html",
+    "precache-manifest.8be39a14c4a0eceb7e4aa4904a2b857b.js": "/crime-navi/precache-manifest.8be39a14c4a0eceb7e4aa4904a2b857b.js",
+    "service-worker.js": "/crime-navi/service-worker.js",
+    "static/css/main.0749616c.chunk.css.map": "/crime-navi/static/css/main.0749616c.chunk.css.map",
+    "static/js/2.942f4147.chunk.js.LICENSE.txt": "/crime-navi/static/js/2.942f4147.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7260810.js",
+    "static/js/2.942f4147.chunk.js",
+    "static/css/main.0749616c.chunk.css",
+    "static/js/main.ffe5e2d8.chunk.js"
+  ]
+}
