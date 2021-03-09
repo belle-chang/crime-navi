@@ -1,6 +1,6 @@
 {
   "homepage": "http://belle-chang.github.io/crime-navi",
-  "name": "mapbox-covid19",
+  "name": "crime-navi",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
