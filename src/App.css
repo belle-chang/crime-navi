@@ -16,7 +16,7 @@ body {
 
 #root,
 .App,
-.mapContainer,
+.map-container,
 .mapBox {
   width: 100%;
   height: 100%;
