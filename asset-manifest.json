@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/crime-navi/static/css/main.0749616c.chunk.css",
-    "main.js": "/crime-navi/static/js/main.5aae2433.chunk.js",
-    "main.js.map": "/crime-navi/static/js/main.5aae2433.chunk.js.map",
+    "main.css": "/crime-navi/static/css/main.ba4a976c.chunk.css",
+    "main.js": "/crime-navi/static/js/main.184ec619.chunk.js",
+    "main.js.map": "/crime-navi/static/js/main.184ec619.chunk.js.map",
     "runtime-main.js": "/crime-navi/static/js/runtime-main.21172c21.js",
     "runtime-main.js.map": "/crime-navi/static/js/runtime-main.21172c21.js.map",
     "static/js/2.c3e283a9.chunk.js": "/crime-navi/static/js/2.c3e283a9.chunk.js",
     "static/js/2.c3e283a9.chunk.js.map": "/crime-navi/static/js/2.c3e283a9.chunk.js.map",
     "index.html": "/crime-navi/index.html",
-    "precache-manifest.3eb10c074f1ca04f036b1ba93cdfd4b5.js": "/crime-navi/precache-manifest.3eb10c074f1ca04f036b1ba93cdfd4b5.js",
+    "precache-manifest.ee62732ed92ef56b8f9b3009c40a363b.js": "/crime-navi/precache-manifest.ee62732ed92ef56b8f9b3009c40a363b.js",
     "service-worker.js": "/crime-navi/service-worker.js",
-    "static/css/main.0749616c.chunk.css.map": "/crime-navi/static/css/main.0749616c.chunk.css.map",
+    "static/css/main.ba4a976c.chunk.css.map": "/crime-navi/static/css/main.ba4a976c.chunk.css.map",
     "static/js/2.c3e283a9.chunk.js.LICENSE.txt": "/crime-navi/static/js/2.c3e283a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.21172c21.js",
     "static/js/2.c3e283a9.chunk.js",
-    "static/css/main.0749616c.chunk.css",
-    "static/js/main.5aae2433.chunk.js"
+    "static/css/main.ba4a976c.chunk.css",
+    "static/js/main.184ec619.chunk.js"
   ]
 }
