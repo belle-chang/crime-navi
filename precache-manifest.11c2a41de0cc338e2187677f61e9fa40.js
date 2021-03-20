@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23c2110eb2767462baca7f7fdb9b016c",
+    "revision": "07ff815c3ff077901610e28facb47243",
     "url": "/crime-navi/index.html"
   },
   {
-    "revision": "1bb09916107d876f5c50",
-    "url": "/crime-navi/static/css/main.ba4a976c.chunk.css"
+    "revision": "7cba3a9a635cd3988e9e",
+    "url": "/crime-navi/static/css/main.5891b7f5.chunk.css"
   },
   {
     "revision": "a7b0078e1a2a887b5cbe",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crime-navi/static/js/2.c3e283a9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bb09916107d876f5c50",
-    "url": "/crime-navi/static/js/main.184ec619.chunk.js"
+    "revision": "7cba3a9a635cd3988e9e",
+    "url": "/crime-navi/static/js/main.721cec79.chunk.js"
   },
   {
     "revision": "7734e4ed69cdf13a93f0",
