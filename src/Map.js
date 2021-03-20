@@ -63,32 +63,43 @@ const Map = () => {
                     100,
                     40
                 ]
+            },
+            layout: {
+                // make layer visible by default
+                'visibility': 'visible'
             }
         });
 
         map.addLayer({
             id: 'cluster-count',
+            // id: 'clusters',
             type: 'symbol',
             source: 'crime',
             filter: ['has', 'point_count'],
             layout: {
-            'text-field': '{point_count_abbreviated}',
-            'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-            'text-size': 12
+                'text-field': '{point_count_abbreviated}',
+                'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+                'text-size': 12,
+                'visibility': 'visible'
             }
         });
 
         map.addLayer({
             id: 'unclustered-point',
+            // id: 'clusters',
             type: 'circle',
             source: 'crime',
             filter: ['!', ['has', 'point_count']],
             paint: {
-            'circle-color': '#11b4da',
-            'circle-radius': 4,
-            'circle-stroke-width': 1,
-            'circle-stroke-color': '#fff'
-            }
+                'circle-color': '#11b4da',
+                'circle-radius': 4,
+                'circle-stroke-width': 1,
+                'circle-stroke-color': '#fff'
+                },
+            layout: {
+                // make layer visible by default
+                'visibility': 'visible'
+                }
             });
     });
 
@@ -103,12 +114,78 @@ const Map = () => {
       setZoom(map.getZoom().toFixed(2));
     });
 
+    // CHANGE: Add layer names that need to be toggled
+    var dictionary = {
+        bos: ['clusters', 'cluster-count'],
+        extra: ['unclustered-point']
+    }
+
+    for (let key in dictionary) {
+        // check if the property/key is defined in the object itself, not in parent
+        if (dictionary.hasOwnProperty(key)) {           
+            console.log(key, dictionary[key]);
+
+            var link = document.createElement('a');
+            link.href = '#';
+            link.className = 'active';
+            link.textContent = key;
+            link.onclick = function (e) {
+                
+                for (var index in dictionary[key]) {
+                var clickedLayer = dictionary[key][index];
+                e.preventDefault();
+                e.stopPropagation();
+            
+                var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+            
+                if (visibility === 'visible') {
+                    map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                    this.className = '';
+                } else {
+                    this.className = 'active';
+                    map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                }
+            }
+            
+        };
+        var layers = document.getElementById('menu');
+        layers.appendChild(link);
+        }
+    }
+    // var toggleableLayerIds = ['clusters', 'cluster-count', 'unclustered-point'];
+
+    // var link = document.createElement('a');
+    // link.href = '#';
+    // link.className = 'active';
+    // link.textContent = "toggle layers";
+    // link.onclick = function (e) {
+    //     for (var index in toggleableLayerIds) {
+    //     var clickedLayer = toggleableLayerIds[index];
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    
+    //     var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+    
+    //     if (visibility === 'visible') {
+    //         map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+    //         this.className = '';
+    //     } else {
+    //         this.className = 'active';
+    //         map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+    //     }
+    //     }
+        
+    // };
+    // var layers = document.getElementById('menu');
+    // layers.appendChild(link);
+
     // Clean up on unmount
     return () => map.remove();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div>
+        <nav id="menu"></nav>
       <div className='sidebarStyle'>
         <div>
           Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
