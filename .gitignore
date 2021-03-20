@@ -16,3 +16,4 @@ yarn.lock
 .env
 data/crime_open_database_core_2019.csv
 data/ny.json
+data/ny_final.json
